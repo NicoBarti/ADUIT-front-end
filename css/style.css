@@ -1,0 +1,71 @@
+/*Encabezado*/
+
+.navbar{
+	background-color: #b3d9ff;
+	text-decoration-color: white;
+	color: white;
+
+}
+
+body{
+	background-color: #ccffe6
+}
+
+.navbar-brand {
+  height: auto;
+}
+
+.navbar-text {
+  font-size: 2em;
+  margin-top: 50px;
+}
+
+.navbar-right {
+  font-size: 2em;
+  margin-right: 10px;
+}
+
+.navbar-brand img{
+	width: 100px;
+	height: 100px;
+}
+
+
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+.lead{
+	color: #ff4441;
+}
+
+
+
+
+
+/*Cuerpo*/
+
+.jumbotron{
+
+	background-color: #134d00;
+	color: white;
+}
+
+#tragos img{
+	height: 200px;
+	margin: 5px;
+}
+
+.form-group label{
+	margin-top: 20px;
+	font-weight: bold;
+}
+
+
+
+/*Pie de página*/
+.panel-footer {
+	color: white;
+	background-color: black;
+}
