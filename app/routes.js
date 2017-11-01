@@ -15,7 +15,12 @@ function RoutesConfig($urlRouterProvider, $stateProvider) {
 
   .state('audit', {
     url: '/audit',
-    templateUrl: 'app/audit/audit.html'
+    templateUrl: 'app/audit/audit.html',
+    controller: 'AuditController',
+    controllerAs: 'audit'
+  })
+  .state('ib', {
+    templateUrl: 'app/ib/ib.html'
   })
 
 };
