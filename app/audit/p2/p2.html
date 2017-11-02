@@ -1,1 +1,38 @@
 <p class="lead"><h3>Pregunta 2 de 3 </h3></p>
+
+
+<label><h2>En el último año, ¿cuántos tragos de alcohol suele tomar en un día de consumo normal?</h2></label>
+
+<div class="container tragos" align="center">
+    <img src="images/copa_vino.jpg" alt="">
+    <img src="images/corto_licor.jpg" alt="">
+    <img src="images/lata_cerveza.jpg" alt="">
+</div>
+
+<div class="jumbotron">
+    <button type="button"
+            ng-click="$ctrl.sleccion({pregunta: 'p2', puntaje: 0}); $ctrl.activarBoton()"
+            class="btn btn-default btn-lg btn-block"
+            >1 ó 2</button>
+    <button type="button"
+            ng-click="$ctrl.sleccion({pregunta: 'p2', puntaje: 1}); $ctrl.activarBoton()"
+            class="btn btn-default btn-lg btn-block">3 ó 4</button>
+    <button type="button"
+            ng-click="$ctrl.sleccion({pregunta: 'p2', puntaje: 2}); $ctrl.activarBoton()"
+            class="btn btn-default btn-lg btn-block">5 ó 6</button>
+    <button type="button"
+            ng-click="$ctrl.sleccion({pregunta: 'p2', puntaje: 3}); $ctrl.activarBoton()"
+            class="btn btn-default btn-lg btn-block">7, 8 ó 9</button>
+    <button type="button"
+            ng-click="$ctrl.sleccion({pregunta: 'p2', puntaje: 4}); $ctrl.activarBoton()"
+            class="btn btn-default btn-lg btn-block">10 ó más</button>
+    </select>
+</div>
+
+<!-- Botón siguiente -->
+<div class="container ">
+		<button class="btn btn-primary btn-lg pull-right" name="button"
+		ng-click = "$ctrl.siguiente();"
+    ng-disabled = "$ctrl.botonActivo == false"
+		>Siguiente pregunta</button>
+</div>

@@ -2,22 +2,19 @@
 
 	<div class="jumbotron">
 
-<P1 ng-if="audit.secuencia == 1" audit="audit"></P1>
+<P1 ng-if="audit.secuencia == 1"
+	siguiente = "audit.siguiente()"
+	sleccion = "audit.sleccion(pregunta, puntaje)"
+	></P1>
 
-<P2 ng-if="audit.secuencia == 2"></P2>
+<P2 ng-if="audit.secuencia == 2"
+	siguiente = "audit.siguiente()"
+	sleccion = "audit.sleccion(pregunta, puntaje)"
+></P2>
 
-<P3 ng-if="audit.secuencia == 3"></P3>
-
-<div class="container ">
-		<button class="btn btn-primary btn-lg pull-right" name="button"
-		ng-if = "!(audit.secuencia == 3)"
-		ng-click = "audit.siguiente()"
-		>Siguiente pregunta</button>
-</div>
-
-<div class="container">
-		<button class="btn btn-primary btn-lg pull-right" name="button"
-		ng-if = "(audit.secuencia == 3)"
-		ui-sref = "ib"
-		>Siguiente pregunta</button>
+<P3 ng-if="audit.secuencia == 3"
+	siguiente = "audit.siguiente()"
+	sleccion = "audit.sleccion(pregunta, puntaje)"
+></P3>
+	
 </div>

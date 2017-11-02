@@ -20,7 +20,9 @@ function RoutesConfig($urlRouterProvider, $stateProvider) {
     controllerAs: 'audit'
   })
   .state('ib', {
-    templateUrl: 'app/ib/ib.html'
+    templateUrl: 'app/ib/ib.html',
+    controller: 'IbController',
+    controllerAs: 'ib'
   })
 
 };

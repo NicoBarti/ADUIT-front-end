@@ -52,15 +52,22 @@ body{
 	color: white;
 }
 
-#tragos img{
+.tragos img{
 	height: 200px;
 	margin: 5px;
+	text-align: center;
 }
 
 .form-group label{
 	margin-top: 20px;
 	font-weight: bold;
 }
+
+.bg-warning{
+	color: black;
+	font-weight: bolder;
+}
+
 
 
 

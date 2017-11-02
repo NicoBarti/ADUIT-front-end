@@ -1,1 +1,33 @@
 <p class="lead"><h3>Pregunta 3 de 3 </h3></p>
+
+<label><h2>En el último año, ¿con qué frecuencia toma 5 o más tragos en un solo día?</h2></label>
+
+<div class="jumbotron">
+    <button type="button"
+            ng-click="$ctrl.sleccion({pregunta: 'p3', puntaje: 0}); $ctrl.activarBoton()"
+            class="btn btn-default btn-lg btn-block"
+            >Nunca</button>
+    <button type="button"
+            ng-click="$ctrl.sleccion({pregunta: 'p3', puntaje: 1}); $ctrl.activarBoton()"
+            class="btn btn-default btn-lg btn-block">Menos de una vez al mes</button>
+    <button type="button"
+            ng-click="$ctrl.sleccion({pregunta: 'p3', puntaje: 2}); $ctrl.activarBoton()"
+            class="btn btn-default btn-lg btn-block">Mensualmente</button>
+    <button type="button"
+            ng-click="$ctrl.sleccion({pregunta: 'p3', puntaje: 3}); $ctrl.activarBoton()"
+            class="btn btn-default btn-lg btn-block">Semanalmente</button>
+    <button type="button"
+            ng-click="$ctrl.sleccion({pregunta: 'p3', puntaje: 4}); $ctrl.activarBoton()"
+            class="btn btn-default btn-lg btn-block">A diario o casi a diario</button>
+    </select>
+</div>
+
+
+<!-- Botón -->
+<div class="container ">
+		<button class="btn btn-primary btn-lg pull-right" name="button"
+		ng-click = "$ctrl.siguiente();"
+    ng-disabled = "$ctrl.botonActivo == false"
+    ui-sref = "ib"
+		>Terminar</button>
+</div>

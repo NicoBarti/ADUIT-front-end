@@ -1,3 +1,11 @@
-<div class="">
-  Explicacion riesgo ...
+<div class="container">
+  <div class="jumbotron">
+    <h4>Puntaje obtenido: {{ib.puntaje}} puntos</h4>
+
+<riesgo-bajo ng-if = "ib.riesgo == 'bajo'"></riesgo-bajo>
+
+<riesgo-alto ng-if = "ib.riesgo == 'alto'"></riesgo-alto>
+
+
+  </div>
 </div>

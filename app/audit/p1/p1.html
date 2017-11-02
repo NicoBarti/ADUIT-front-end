@@ -1,20 +1,32 @@
 <p class="lead"><h3>Pregunta 1 de 3 </h3></p>
 
-<label><h2>¿Con qué frecuencia consume alguna bebida alcoholica?</h2></label>
+<label><h2>En el último año, ¿con qué frecuencia ha consumido alguna bebida alcoholica?</h2></label>
 <div class="jumbotron">
-    <button type="button" ng-click="audit.responder()"
-    class="btn btn-default btn-lg btn-block">Nunca</button>
     <button type="button"
-    class="btn btn-default btn-lg btn-block">1 o menos veces al mes</button>
+            ng-click="$ctrl.sleccion({pregunta: 'p1', puntaje: 0}); $ctrl.activarBoton()"
+            class="btn btn-default btn-lg btn-block"
+            >Nunca</button>
     <button type="button"
-    class="btn btn-default btn-lg btn-block">De 2 a 4 veces al mes</button>
+            ng-click="$ctrl.sleccion({pregunta: 'p1', puntaje: 1}); $ctrl.activarBoton()"
+            class="btn btn-default btn-lg btn-block">1 o menos veces al mes</button>
     <button type="button"
-    class="btn btn-default btn-lg btn-block">De 2 a 3 veces a la semana</button>
+            ng-click="$ctrl.sleccion({pregunta: 'p1', puntaje: 2}); $ctrl.activarBoton()"
+            class="btn btn-default btn-lg btn-block">De 2 a 4 veces al mes</button>
     <button type="button"
-    class="btn btn-default btn-lg btn-block">4 o más veces a la semana</button>
-
+            ng-click="$ctrl.sleccion({pregunta: 'p1', puntaje: 3}); $ctrl.activarBoton()"
+            class="btn btn-default btn-lg btn-block">De 2 a 3 veces a la semana</button>
+    <button type="button"
+            ng-click="$ctrl.sleccion({pregunta: 'p1', puntaje: 4}); $ctrl.activarBoton()"
+            class="btn btn-default btn-lg btn-block">4 o más veces a la semana</button>
     </select>
 </div>
 
+<!-- Botón Siguiente -->
+<div class="container ">
+		<button class="btn btn-primary btn-lg pull-right" name="button"
+		ng-click = "$ctrl.siguiente();"
+    ng-disabled = "$ctrl.botonActivo == false"
+		>Siguiente pregunta</button>
+</div>
 
 <!-- form-group -->
